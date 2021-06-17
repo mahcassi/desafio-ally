@@ -5,8 +5,8 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Dashboard from './Dashboard/Index';
-import Form from './Form/Index';
+import Dashboard from '../components/Dashboard/Index';
+import Form from '../components/Form/Index';
 const Root = () => {
   return (
     <Router>

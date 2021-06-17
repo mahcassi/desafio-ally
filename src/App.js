@@ -1,6 +1,7 @@
 import React from 'react';
 import { GlobalStyle } from "./styles/global";
-import Root from './pages/Root'
+import Root from './routes/Root';
+
 const App = () => {
   return (
     <>
