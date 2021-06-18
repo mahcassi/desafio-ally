@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-rodar-aplicacao">Rodar aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-rodar-aplicacao">Rodar Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@ O projeto foi desenvolvido com ReactJS e JavaScript. Criei uma API REST fake com
 - [JSON-Server](https://www.npmjs.com/package/json-server);
 ---
 
-## :rocket: Rodando Projeto
+## :rocket: Rodar Aplicação
 
 ```
 # Clonar o projeto
