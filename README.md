@@ -16,7 +16,7 @@
 
 ## :page_with_curl: Sobre
 
-Este projeto foi desenvolvido para um teste de estágio da empresa Ally.
+Este projeto foi desenvolvido para teste de estágio da empresa Ally.
 
 Através dessa aplicação o usuário consegue cadastrar um novo curso, pesquisar os cursos cadastrados e editar as informações sobre o curso. 
 
