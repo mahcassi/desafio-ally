@@ -7,13 +7,13 @@ import {
 
 import { Dashboard } from '../pages/Dashboard/Index';
 
-import CreateCourse from '../pages/CreateCourse/Index';
+import PagesCourseForm from '../pages/PagesCourseForm/Index';
 const Root = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/create" component={CreateCourse} />
-        <Route path="/edit/:id" component={CreateCourse} />
+        <Route path="/create" component={PagesCourseForm} />
+        <Route path="/edit/:id" component={PagesCourseForm} />
         <Route path="/" component={Dashboard} />
       </Switch>
     </Router>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import axios from 'axios';
@@ -13,24 +13,36 @@ const initialValue = {
   dateEnd: '',
 }
 
-export const CourseForm = () => {
+export const CourseForm = ({ id }) => {
   const [values, setvalues] = useState(initialValue);
   const history = useHistory();
 
-
-  console.log(values);
+  useEffect(() => {
+    if (id) {
+      axios.get(`http://localhost:5000/courses/${id}`)
+        .then((response) => {
+          setvalues(response.data);
+        })
+    }
+  }, [id]);
 
   function onChange(ev) {
     const { name, value } = ev.target;
-    setvalues({...values, [name]: value});
+    setvalues({ ...values, [name]: value });
   }
 
   function onSubmit(ev) {
     ev.preventDefault();
 
-    axios.post('http://localhost:5000/courses', values).then(response => {
-      history.push('/');
-    });
+    const method = id ? 'put' : 'post';
+    const url = id
+      ? `http://localhost:5000/courses/${id}`
+      : 'http://localhost:5000/courses'
+
+    axios[method](url, values)
+      .then(response => {
+        history.push('/');
+      });
   }
 
   return (
@@ -38,20 +50,22 @@ export const CourseForm = () => {
       <Form onSubmit={onSubmit}>
         <h1>
           <img src={logoImg} alt="Ally" />
-          Cadastro de Cursos
+          Novo Curso
         </h1>
         <div className="course-form__group">
           <label htmlFor="name">
             Nome do curso
           </label>
-          <input id="name" name="name" type="text" onChange={onChange}/>
+          <input id="name" name="name" type="text" onChange={onChange} value={values.name} />
         </div>
 
         <div className="course-form__group">
           <label htmlFor="duration">
             Duração (semanas)
           </label>
-          <input id="duration" name="duration" type="number" onChange={onChange} />
+
+          <input id="duration" name="duration" type="number" onChange={onChange} value={values.duration}
+          />
         </div>
 
         <CourseDate>
@@ -59,18 +73,18 @@ export const CourseForm = () => {
             <label htmlFor="dateStart">
               Data de Início
             </label>
-            <InputMask type="text" mask="99/99/9999" id="dateStart" name="dateStart" onChange={onChange} />
+            <InputMask type="text" mask="99/99/9999" id="dateStart" name="dateStart" onChange={onChange} value={values.dateStart} />
           </div>
 
           <div className="course-form__group">
             <label htmlFor="dateEnd">
-              Date de Término
+              Data de Término
             </label>
-            <InputMask type="text" mask="99/99/9999" id="dateEnd" name="dateEnd" onChange={onChange} />
+            <InputMask type="text" mask="99/99/9999" id="dateEnd" name="dateEnd" onChange={onChange} value={values.dateEnd} />
           </div>
         </CourseDate>
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Salvar</button>
       </Form>
 
     </div>

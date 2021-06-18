@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import logoImg from '../../assets/logo.png';
 import { Header, Content, SectionSearch, Container } from "./styles";
 
@@ -44,6 +44,7 @@ export function Dashboard() {
             <th>Duração</th>
             <th>Data de Início</th>
             <th>Data de Término</th>
+            <th></th>
           </tr>
         </thead>
 
@@ -55,6 +56,12 @@ export function Dashboard() {
                 <td>{course.duration} semanas</td>
                 <td>{course.dateStart}</td>
                 <td>{course.dateEnd}</td>
+                <td>
+                  <Link className="link-edit"
+                    to={`/edit/${course.id}`}>
+                    Editar
+                  </Link>
+                </td>
               </tr>
             );
           })}

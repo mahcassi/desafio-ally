@@ -17,16 +17,14 @@ export const Content = styled.div`
 
 
   .link {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #fff;
     background-color: var(--laranja);
     border: 0;
-    padding: 0 2rem;
     border-radius: 0.25rem;
     text-decoration: none;
     padding: 1.5rem 3rem;
     font-weight: 600;
-    font-size: 1.2rem;
 
     transition: filter 0.2s;
 
@@ -81,6 +79,21 @@ export const Container = styled.div`
       &:first-child {
         color: #e19300;
         font-weight: 600;
+      }
+      
+      .link-edit {
+        color: #fff;
+        background-color: var(--laranja);
+        border: 0;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        padding: 0.3rem;
+        font-size: 0.9rem;
+        transition: filter 0.2s;
+
+        &:hover{
+          filter: brightness(0.9);
+        }
       }
     }
   }

@@ -9,7 +9,7 @@ export const Form = styled.form`
 
     img {
       width: 15rem;
-      margin: 2rem 0 2.5rem 0;
+      margin: 2rem 4rem 2.5rem 0;
     }
   }
 
@@ -41,7 +41,7 @@ export const Form = styled.form`
   }
 
   button[type="submit"] {
-    width: 100%;
+    width: 102%;
     padding: 0 0 0 1rem;
     height: 3rem;
     background: #00ff8b;
