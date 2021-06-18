@@ -20,7 +20,7 @@ Este projeto foi desenvolvido para teste de estágio da empresa Ally.
 
 Através dessa aplicação o usuário consegue cadastrar um novo curso, pesquisar os cursos cadastrados e editar as informações sobre o curso. 
 
-O projeto foi desenvolvido com ReactJS e JavaScript. Criei uma API REST fake com JSON-Server para o armazenamento de dados. 
+A aplicação foi feita com ReactJS e JavaScript. Criei uma API REST fake com JSON-Server para o armazenamento de dados. 
 
 
 ## :gear: Tecnologias 
