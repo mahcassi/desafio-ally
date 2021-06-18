@@ -24,7 +24,9 @@ export const Content = styled.div`
     padding: 0 2rem;
     border-radius: 0.25rem;
     text-decoration: none;
-    padding: 1.5rem;
+    padding: 1.5rem 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
 
     transition: filter 0.2s;
 
@@ -50,8 +52,11 @@ export const SectionSearch = styled.section`
 `;
 
 export const Container = styled.div`
- 
+  max-width: 1120px;
+  margin: 0 auto;
 
+  padding: 2.5rem 1rem;
+  
   table {
     width: 100%;
     border-spacing: 0 0.5rem;

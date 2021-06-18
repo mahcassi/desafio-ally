@@ -3,23 +3,23 @@
     {
       "id": 1,
       "name": "Curso de Inglês",
-      "duration": 32,
-      "dateStart": "30/05/2021",
-      "dateEnd": "14/02/2022"
+      "duration": 52,
+      "dateStart": "01/01/2021",
+      "dateEnd": "31/12/2021"
     },
     {
       "id": 2,
       "name": "Curso de Francês",
-      "duration": 6,
-      "dateStart": "30/05/2021",
-      "dateEnd": "14/02/2022"
+      "duration": 52,
+      "dateStart": "01/01/2021",
+      "dateEnd": "31/12/2021"
     },
     {
       "id": 3,
       "name": "Curso de Espanhol",
-      "duration": 8,
-      "dateStart": "30/05/2021",
-      "dateEnd": "14/02/2022"
+      "duration": 52,
+      "dateStart": "01/01/2021",
+      "dateEnd": "31/12/2021"
     }
   ]
 }

@@ -5,14 +5,15 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Dashboard from '../components/Dashboard/Index';
-import Form from '../components/Form/Index';
+import { Dashboard } from '../pages/Dashboard/Index';
+
+import CreateCourse from '../pages/CreateCourse/Index';
 const Root = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/create" component={Form} />
-        <Route path="/edit/:id" component={Form} />
+        <Route path="/create" component={CreateCourse} />
+        <Route path="/edit/:id" component={CreateCourse} />
         <Route path="/" component={Dashboard} />
       </Switch>
     </Router>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import logoImg from '../../assets/logo.png';
 import { Header, Content, SectionSearch, Container } from "./styles";
 
-export function CourseTable() {
+export function Dashboard() {
 
   const [courses, setCourses] = useState([]);
   const [search, setSearch] = useState('');
@@ -14,7 +14,7 @@ export function CourseTable() {
     if (search) {
       params.name_like = search;
     }
-    axios.get('http://localhost:5000/courses', { params }).then((response) => {
+    axios.get('http://localhost:5000/courses?&_order=desc&_sort=id', { params }).then((response) => {
       setCourses(response.data);
     });
   }, [search]);
