@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-rodar-projeto">Rodar Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-rodar-projeto">Rodar Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@ A aplicação foi feita com ReactJS e JavaScript. Criei uma API REST fake com JS
 
 ## :rocket: Rodar Projeto
 
-```
+```bash
 # Clonar o projeto
 $ git clone
 
