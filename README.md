@@ -35,7 +35,7 @@ A aplicação foi feita com ReactJS e JavaScript. Criei uma API REST fake com JS
 # Clonar o projeto
 $ git clone
 
-# Instalar depências do front-end
+# Instalar dependências do front-end
 $ yarn 
 # Rodar
 $ yarn start 
